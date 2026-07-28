@@ -564,7 +564,7 @@ class OmnivaltShipping extends CarrierModule
         if (version_compare(_PS_VERSION_, '8.0.0', '>=')) {
             $v3UpdateData = $this->checkForUpdate(self::V3_CHECK_URL);
             if ($v3UpdateData) {
-                $v3_link = '<a href="' . self::V3_RELEASE_URL . '" target="_blank">v' . self::V3_VERSION . '</a>';
+                $v3_link = '<a href="' . self::V3_RELEASE_URL . '" target="_blank">' . self::V3_VERSION . '</a>';
                 $this->context->smarty->assign([
                     'v3_recommendation' => sprintf($this->l('We recommend upgrading to the new module version %s, which is designed specifically for PrestaShop 8 and 9.'), $v3_link),
                     'v3_download_url' => self::V3_DOWNLOAD_URL,
