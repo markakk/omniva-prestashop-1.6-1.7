@@ -29,10 +29,10 @@ class OmnivaltShipping extends CarrierModule
     const UPDATE_URL = 'https://api.github.com/repos/mijora/omniva-prestashop-1.6-1.7/releases/latest';
     const DOWNLOAD_URL = "https://github.com/mijora/omniva-prestashop-1.6-1.7/releases/latest/download/omnivaltshipping.zip";
 
-    const V3_VERSION = '3.0.0';
-    const V3_CHECK_URL = 'https://api.github.com/repos/mijora/omniva-prestashop-v3/releases/tags/v3.0.0';
-    const V3_RELEASE_URL = 'https://github.com/mijora/omniva-prestashop-v3/releases/tag/v3.0.0';
-    const V3_DOWNLOAD_URL = "https://github.com/mijora/omniva-prestashop-v3/releases/download/v3.0.0/omnivaltshipping.zip";
+    const V3_VERSION = '3.0.1';
+    const V3_CHECK_URL = 'https://api.github.com/repos/mijora/omniva-prestashop-v3/releases/tags/' . self::V3_VERSION;
+    const V3_RELEASE_URL = 'https://github.com/mijora/omniva-prestashop-v3/releases/tag/' . self::V3_VERSION;
+    const V3_DOWNLOAD_URL = "https://github.com/mijora/omniva-prestashop-v3/releases/download/" . self::V3_VERSION . "/omnivaltshipping.zip";
 
     const SHIPPING_SETS = array(
         'baltic' => array(
